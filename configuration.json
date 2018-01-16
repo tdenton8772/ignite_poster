@@ -59,11 +59,12 @@
     "caption": true,
     "height": 150,
     "width" : 150,
+    "height_multiplier": 1.1,
     "padding": 10,
     "font": {
             "font_family":"resources/Verdana.ttf",
-            "font_size":12,
-            "color": "black"
+            "font_size":16,
+            "color": "blue"
         }
     },
 "file_name": "ignite_file.jpg"

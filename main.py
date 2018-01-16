@@ -67,7 +67,7 @@ def process_image(file_name):
     if config['images']['caption'] == True:
         name = file_name.split(".")[0].split(" ")
         name = "{} {}".format(name[0], name[1])
-        height = int(config['images']['height'] + (config['images']['height'] * .25) + (config['images']['padding']*2))
+        height = int((config['images']['height'] * config['images']['height_multiplier']) + (config['images']['padding']*2))
         width = int(config['images']['width'] + (config['images']['padding']*2))
         base_img = Image.new("RGB", (width, height), config['main']['poster']['background_color'])
         text = ImageDraw.Draw(base_img)
