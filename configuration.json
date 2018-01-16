@@ -1,0 +1,70 @@
+{"main": {
+    "heading_1": {
+        "text":"Volunteers 2016",
+        "position":{
+            "x": 0,
+            "y": 25
+        },
+        "font": {
+            "color":"black",
+            "font_family":"resources/Verdana.ttf",
+            "font_size":60
+        }
+    },
+    "heading_2": {
+        "text":"Thank you everyone!",
+        "position":{
+            "x": 0,
+            "y": 100
+        },
+        "font": {
+            "color":"black",
+            "font_family":"resources/Verdana.ttf",
+            "font_size":24
+        }
+    },
+    "image_1":{
+        "path":"resources/logo1.1.png",
+        "height":200,
+        "width":200,
+        "position":{
+            "x":0,
+            "y":0
+        }
+    },
+    "image_2":{
+        "path":"resources/EldoraLogo-CMYK.jpg",
+        "height":200,
+        "width":400,
+        "position":{
+            "x":0,
+            "y":150
+        }
+    },
+    "poster":{
+        "_width":10800,
+        "_height":14400,
+        "margin": 10,
+        "width":1200,
+        "height":700,
+        "background_color":"white"
+    }    
+},
+"collage_grid":{
+    "columns": 5,
+    "start_y": 400
+    },
+"images":{
+    "path": "./images/",
+    "caption": true,
+    "height": 150,
+    "width" : 150,
+    "padding": 10,
+    "font": {
+            "font_family":"resources/Verdana.ttf",
+            "font_size":12,
+            "color": "black"
+        }
+    },
+"file_name": "ignite_file.jpg"
+}
