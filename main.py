@@ -69,7 +69,7 @@ def process_image(file_name):
         name = "{} {}".format(name[0], name[1])
         height = int(config['images']['height'] + (config['images']['height'] * .25) + (config['images']['padding']*2))
         width = int(config['images']['width'] + (config['images']['padding']*2))
-        base_img = Image.new("RGBA", (width, height), config['main']['poster']['background_color'])
+        base_img = Image.new("RGB", (width, height), config['main']['poster']['background_color'])
         text = ImageDraw.Draw(base_img)
         size_x, size_y = text.textsize(name, 
                          ImageFont.truetype(config['images']['font']['font_family'], 
@@ -87,7 +87,7 @@ def process_image(file_name):
         name = "{} {}".format(name[0], name[1])
         height = int(config['images']['height'] + (config['images']['padding']*2))
         width = int(config['images']['width'] + (config['images']['padding']*2))
-        base_img = Image.new("RGBA", (width, height), config['main']['poster']['background_color'])
+        base_img = Image.new("RGB", (width, height), config['main']['poster']['background_color'])
         base_img.paste(img, (config['images']['padding'], config['images']['padding']))    
     
     return base_img
@@ -109,7 +109,7 @@ def get_images(im):
 
 if __name__=="__main__":
     config = get_config()
-    im = Image.new("RGBA", (config['main']['poster']['width'],config['main']['poster']['height']), config['main']['poster']['background_color'])
+    im = Image.new("RGB", (config['main']['poster']['width'],config['main']['poster']['height']), config['main']['poster']['background_color'])
     im = set_headers(im)
     im = set_image_one(im)
     im = set_image_two(im)
