@@ -103,7 +103,7 @@ def get_images(im):
         column = index % config['collage_grid']['columns']
         
         x_pos = int(((config['main']['poster']['width'] / config['collage_grid']['columns']) * column) + config['main']['poster']['margin'])
-        y_pos = int(config['collage_grid']['start_y'] + (row * config['images']['height']* 1.5) + (config['images']['padding']*2))
+        y_pos = int(config['collage_grid']['start_y'] + (row * config['images']['height'] * config['images']['width_multiplier']) + (config['images']['padding']*2))
         im.paste(img, (x_pos, y_pos))
     return im
 

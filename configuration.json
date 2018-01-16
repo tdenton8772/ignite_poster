@@ -60,6 +60,7 @@
     "height": 150,
     "width" : 150,
     "height_multiplier": 1.1,
+    "width_multiplier": 1.2,
     "padding": 10,
     "font": {
             "font_family":"resources/Verdana.ttf",
